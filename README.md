@@ -17,11 +17,10 @@ It has an array with the extensions that will be excluded, if you have certain e
  - Python version: 2.7
  - Operating System: Linux
  - Accepts arguments from a command line
-
+ - If no arguments are found from the command line, ask the user for an input inside of the application.
+ - There is a version for Python 3.4+ in a separate branch called python3
+ - Has been tested and works in Windows 10. There is a bug where it picks up random file types by searching through what is probably the .git folder.
 
 ##To Do
- - If no arguments are found from the command line, ask the user for an input inside of the application.
- - Write a version for Python 3.4+
- - Test Windows compatibility and update code if problems arise during testing (perhaps create a separate branch as well)
  - Give the user the ability to upload a csv to define excluded file types
  - If a .gitignore file is found, ask the user if they would like to use that to append to their current ignore list

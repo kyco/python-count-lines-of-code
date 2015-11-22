@@ -2,7 +2,10 @@ import os
 import sys
 import fnmatch
 
-path = sys.argv[1]
+try:
+    path = sys.argv[1]
+except IndexError as e:
+    path = input('file path: ')
 
 extensions = []
 code_count = []
