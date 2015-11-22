@@ -2,11 +2,14 @@ import os
 import sys
 import fnmatch
 
-path = sys.argv[1]
+try:
+    path = sys.argv[1]
+except IndexError as e:
+    path = input('file path: ')
 
 extensions = []
 code_count = []
-exclude = ['sample','exclude','description','png','jpg','config','HEAD','packed-refs','idx','master','pack','txt','index','gitignore']
+exclude = ['sample','exclude','description','png','jpg','config','HEAD','packed-refs','idx','master','pack','txt','index','gitignore','COMMIT_EDITMSG','python3']
 
 def file_len(fname):
     i = 0
@@ -41,5 +44,5 @@ for run in extensions:
     pass
 
 for idx, val in enumerate(code_count):
-    print extensions[idx] + ": " + str(code_count[idx])
+    print(extensions[idx] + ": " + str(code_count[idx]))
     pass
