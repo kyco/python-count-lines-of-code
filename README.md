@@ -13,6 +13,10 @@ It has an array with the extensions that will be excluded, if you have certain e
 
 	exclude = ['sample','exclude','description','png','jpg','config','HEAD','packed-refs','idx','master','pack','txt','index','gitignore']
 
+If you are including a csv file, the contents should look like this. Without spaces in between the file types
+	
+	git,docx,xslsx,csv
+
 ##Info
  - Python version: 2.7
  - Operating System: Linux
